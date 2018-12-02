@@ -1,0 +1,209 @@
+body {
+  text-align: center;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  /* background: #ee9ca7; */
+}
+
+/* .img-responsive {
+width: 100%;
+} */
+
+/* TOP関係のコード */
+.top01 h1{
+  font-size: 2.3em;
+  font-weight: 900;
+  letter-spacing: 10px;
+  color: #ACB6E5;
+  background: -webkit-linear-gradient(0deg, #00f260,#0575e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top02 {
+  background: -webkit-linear-gradient(0deg, #a770ef,#cf8bf3,#fdb99b);
+}
+
+.top02 h3{
+  color: #fff;
+  padding-top: 20px;
+}
+
+.top02 small{
+  color: #fff;
+}
+
+.top02 p{
+  color: #fff;
+  margin: 30px;
+  padding-bottom: 20px;
+}
+
+.top03 {
+  background: -webkit-linear-gradient(0deg, #11998e,#38ef7d);
+}
+
+.top03 h3{
+  color: #fff;
+  padding-top: 20px;
+}
+
+.top03 small{
+  color: #fff;
+}
+
+.top04 {
+  color: #fff;
+}
+
+.top04 h4{
+  color: #fff;
+}
+
+.top04 p{
+  color: #fff;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+
+/* ここまで、TOP関係のコード */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20px;
+}
+
+.logo {
+    font-size: 20px;
+  }
+
+.nav-button {
+  display: none;
+}
+
+.nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    color: #448aff;
+    font-weight: 900;
+  }
+
+.nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+.nav-wrap.open {
+  display: block;
+}
+.nav-wrap.close {
+  display: none;
+}
+
+@media screen and (min-width: 481px) {
+  .nav-wrap {
+    display: block !important;
+  }
+}
+.content {
+  padding: 20px;
+}
+@media screen and (max-width: 480px) {
+  .nav-button {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav {
+      height: 100%;
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+  .nav-wrap  li {
+      display: block;
+      margin: 2em;
+      a {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+  }
+  /*メニューボタン*/
+  .nav-button
+  .nav-button span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+  }
+  .nav-button {
+    z-index: 20;
+    position: relative;
+    width: 40px;
+    height: 36px;
+  }
+  .nav-button span {
+    position: absolute;
+    left: 30;
+    width: 60%;
+    height: 3px;
+    background-color: #64bdd4;
+    border-radius: 4px;
+  }
+  .nav-button span:nth-of-type(1) {
+    top: 8px;
+  }
+  .nav-button span:nth-of-type(2) {
+    top: 16px;
+  }
+  .nav-button span:nth-of-type(3) {
+    bottom: 8px;
+  }
+  .nav-button.active span:nth-of-type(1) {
+    -webkit-transform: translateY(16px) rotate(-45deg);
+    transform: translateY(16px) rotate(-45deg);
+  }
+  .nav-button.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .nav-button.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-16px) rotate(45deg);
+    transform: translateY(-16px) rotate(45deg);
+  }
+
+/* ここからはテストコード */
+
+/* ここからまでテストコード */
+
+
+/* Footer */
+.footer-outer {
+    width:auto;
+    margin: 0 auto;
+    padding: 10px 0;
+    background: #333;
+    text-align: center;
+}
+
+.footer-outer-2 {}
+
+.footer {}
+
+.footer-p {
+  font-size: 100%;
+  color: #fff;
+}
